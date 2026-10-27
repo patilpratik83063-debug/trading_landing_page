@@ -93,6 +93,11 @@ curl -s -X POST localhost:4173/api/checkout -H 'content-type: application/json' 
    Vercel serves the HTML files statically and turns each file in `api/` into a function.
 3. Deploy. The site is live immediately; checkout returns `501` until step 2 below.
 
+`vercel.json` sets `"framework": null` and `"buildCommand": null`, so the deployment
+ignores any framework preset left over on the project (a Next.js preset would otherwise
+run `next build` and fail with `NEXT_NO_VERSION`). If a build still reports Next.js,
+open **Settings → Build & Development Settings → Framework Preset** and choose *Other*.
+
 Or from the CLI:
 
 ```bash
