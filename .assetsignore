@@ -1,0 +1,15 @@
+# Files that must never be uploaded as public static assets.
+node_modules
+.freebuff
+.local
+.wrangler
+worker
+server
+.env
+.env.*
+.dev.vars
+.git
+.gitignore
+.assetsignore
+README.md
+wrangler.jsonc

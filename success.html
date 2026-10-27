@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enrolment confirmed — Demonfx</title>
+  <meta name="description" content="Your Demonfx Forex Trading Masterclass enrolment is confirmed. Receipt and access details are sent by email.">
+  <meta name="theme-color" content="#04070b">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="site-nav">
+    <div class="nav__bar">
+      <a class="brand" href="index.html" aria-label="Demonfx home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18V9m5 9V5m5 13v-6m5 6V8"/><path d="M3 21h18"/></svg>
+        </span>
+        <span class="brand__name">Demonfx<i>.</i></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html#curriculum">Course</a>
+        <a href="index.html#syllabus">Curriculum</a>
+        <a href="contact.html">Support</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost btn--sm" href="index.html">Back to site</a>
+        <button class="nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a class="menu__link" href="index.html">Home <span>01</span></a>
+    <a class="menu__link" href="index.html#curriculum">Course <span>02</span></a>
+    <a class="menu__link" href="contact.html">Support <span>03</span></a>
+    <div class="menu__cta">
+      <a class="btn btn--primary" href="contact.html">Contact support <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="status-page">
+      <div class="status-card">
+        <span class="status-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg>
+        </span>
+        <p class="eyebrow">Payment received</p>
+        <h1>You're enrolled.</h1>
+        <p id="demo-note" class="notice" style="text-align:left">
+          This is the post-purchase page shown in preview. No payment was taken — configure the
+          checkout keys in <code>README.md</code> to run a real transaction.
+        </p>
+        <p>
+          Thank you for enrolling in the Forex Trading Masterclass. A receipt and your course access
+          details are on the way to the email address you used at checkout.
+        </p>
+
+        <div class="status-card__details">
+          <div><span>Course</span><b>Forex Trading Masterclass</b></div>
+          <div><span>Format</span><b>Self-paced online · 29 lessons</b></div>
+          <div><span>Receipt</span><b>Emailed within minutes</b></div>
+          <div id="reference-row" hidden><span>Payment reference</span><b id="reference-value">—</b></div>
+        </div>
+
+        <div class="status-card__actions">
+          <a class="btn btn--primary" href="index.html#syllabus">
+            Review the curriculum
+            <span class="btn__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+          </a>
+          <a class="btn btn--ghost" href="contact.html#enquiry">Contact support</a>
+        </div>
+
+        <p style="font-size:.76rem;color:var(--faint)">
+          If the receipt has not arrived within 15 minutes, check your spam folder and then contact
+          <a class="text-link" href="mailto:hello@demonfx.com">hello@demonfx.com</a> with the email
+          address used at checkout.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="risk-box" style="margin-top:0">
+        <strong>Risk disclosure</strong>
+        <p>Forex trading involves substantial risk of loss and is not suitable for every investor. Demonfx provides educational content only — not investment advice, brokerage services or profit guarantees.</p>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Demonfx. All rights reserved.</span>
+        <div>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="refund-policy.html">Refunds</a>
+          <a href="risk-disclosure.html">Risk disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var demo = params.get("demo");
+      var session = params.get("session_id");
+
+      if (demo === "1") {
+        var note = document.getElementById("demo-note");
+        if (note) note.classList.add("is-visible");
+      }
+      if (session) {
+        var row = document.getElementById("reference-row");
+        var value = document.getElementById("reference-value");
+        if (row && value) {
+          value.textContent = session.length > 24 ? session.slice(0, 12) + "…" + session.slice(-6) : session;
+          row.hidden = false;
+        }
+      }
+    })();
+  </script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

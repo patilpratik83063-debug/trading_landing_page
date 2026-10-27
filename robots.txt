@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+Disallow: /success.html
+Disallow: /failed.html
+
+# TODO: update to the live domain.
+Sitemap: https://www.demonfx.com/sitemap.xml

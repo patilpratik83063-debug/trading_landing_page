@@ -1,0 +1,9 @@
+node_modules/
+.local/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
+.DS_Store
+*.log

@@ -1,0 +1,12 @@
+# Local tooling and alternative hosting configs are not served publicly.
+server/
+worker/
+wrangler.jsonc
+.assetsignore
+.local/
+.env
+.env.*
+*.log
+node_modules/
+.git/
+README.md

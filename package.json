@@ -1,0 +1,15 @@
+{
+  "name": "demonfx-trading-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demonfx — premium Forex education landing page with Stripe-hosted checkout, enquiry API and purchase confirmation email.",
+  "scripts": {
+    "dev": "node server/dev-server.js",
+    "start": "node server/dev-server.js",
+    "vercel:dev": "vercel dev"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
